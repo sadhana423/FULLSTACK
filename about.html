@@ -5,29 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .paragraph {
+            background-color: indianred;
+        }
+
+        #one {
+            color: blue;
+        }
+
+        #two {
+            color: indigo;
+        }
+
+        #three {
+            color: limegreen;
+        }
+
+        #one,
+        #two,
+        #three {
+            background-color: aqua;
+        }
+        .para{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            font-size: larger;
+            font-style: oblique;  
+            letter-spacing: 10px;
+            line-height: 50px;
+            text-transform:uppercase;
+            text-align: justify;
+        }
+        h1{
+            padding: 10px;
+            border: 5px double black;
+            margin: 10px 20px;
+            margin-top: 10px;
+            border-top-left-radius: 10px;
+            border-top-width: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem ut cumque fuga quos ex, temporibus
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorem ut cumque fuga quos
+        ex, temporibus
         corporis doloremque, ipsam earum atque reprehenderit quis eos quam possimus sint, alias beatae molestias
-        necessitatibus ipsum fugit omnis sapiente qui magnam. 
-        <br><hr>Voluptates eum aperiam fugiat totam! Necessitatibus, velit
+        necessitatibus ipsum fugit omnis sapiente qui magnam.
+        <br>
+        <hr>Voluptates eum aperiam fugiat totam! Necessitatibus, velit
         quod tempore, doloribus nesciunt beatae magni nostrum saepe ab culpa deserunt distinctio, tempora vitae eaque
         ullam obcaecati porro. Nobis culpa consequatur doloremque sapiente porro aperiam nam, animi voluptatem, magnam
         autem excepturi tenetur quia neque non fugit facere dolores nihil, soluta optio distinctio. Necessitatibus omnis
-        possimus, adipisci voluptatibus quia quidem sit numquam accusantium quos nam, illum consequuntur?</p>
+        possimus, adipisci voluptatibus quia quidem sit numquam accusantium quos nam, illum consequuntur?
+    </p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime molestias odio dignissimos ut facere consectetur
+        debitis sunt ipsa fuga praesentium nemo, est voluptas placeat iure vel atque illum reprehenderit eius.</p>
     <a href="about.html">about</a>
     <img src="./assets/bouquet.png" alt="bouquet" width="400px" height="400px">
     <ul>
-        <li>one</li>
-        <li>two</li>
-        <li>three</li>
+        <li id="one">one</li>
+        <li id="two">two</li>
+        <li id="three">three</li>
     </ul>
     <ol>
         <li>one</li>
         <li>two</li>
         <li>three</li>
     </ol>
+    <h1>box model</h1>
 </body>
 
 </html>

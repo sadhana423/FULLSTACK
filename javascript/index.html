@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="text">Hello</h1>
+    <button onclick="buttonClicked()">Click me!!</button>
+    <script>
+        function buttonClicked(){
+            const result=document.getElementById("text")
+            result.innerHTML=result.innerHTML==="Hello kpr"?"Hello world":"Hello kpr"
+        }
+        function addname(){
+            const name = document.getElementById("name");
+            const id = document.createElement("li");
+            li.innertext=name;
+            document.getElementById("list").append(li)
+        }
+        function handlebuttonclicked(){
+            console.log("button clicked")
+        }
+        var a = "10"
+        var b = "20";
+        console.log(a * b);
+        console.log(typeof a);
+        console.log(typeof b);
+        a = true
+        console.log(typeof a);
+        var c;
+        console.log(typeof c);
+        var c = null;
+        console.log(typeof c);
+
+        let arr = [10, 20, 30, 40];
+        let arr2 = [...arr, 50, 60, 70]
+        console.log(arr)
+        console.log(arr2)
+    </script>
+</body>
+
+</html>
