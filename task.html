@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form</title>
     <style>
-        h1{
-            margin: 200px;
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
         }
-    </style>
+         form {
+         background-color: #ffffffcc;
+            padding: 200px;
+            width: 300px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid floralwhite
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color:rosybrown;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background-color:indigo;
+        }
+
+        #result1, #result2 {
+            font-size: 1rem;
+            color: #34495e;
+            margin-top: 15px;
+        }
+       </style>
 </head>
-
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h>
+    <form id="form">
+        <h1>Student Form</h1>
+        <label for="Name">Name:</label>
+        <input id="Name"type="text" placeholder="Enter the name"required>
+        <br><br>
+        <label for="Register no">Register no:</label>
+         <input id="Register no"type="Register no" placeholder=" Enter the register number" required maxlength="8">
+         <br><br>
+          <label for="Department">Department:</label>
+        <input id="Department"type="text" placeholder="Enter the department"required>
+        <br><br>
+         <label for="DOB">DOB:</label>
+        <input id="DOB"type="text" placeholder="Enter date of birth"required>
+        <br><br>
+         <label for="Mobile no">Mobile no:</label>
+        <input id="Mobile no"type="text" placeholder="Enter the mobile number"required>
+        <br><br>
+         <label for="Address">Address:</label>
+        <input id="Address"type="text" placeholder="Enter your address"required>
+        <br><br>
+          <label for="Gender">Gender</label>
+         <select name="Gender" id="Gender">
+            <option value="">select</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+         </select><br><br>
+        <button type="submit">submit</button>
+        <h1 id="result1"></h1>
+        <h1 id="result2"></h1>
+    </form>    
 </body>
-
-</html> 
+</html>
